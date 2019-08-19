@@ -13,8 +13,21 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: `gatsby-source-strapi`,
+      options: {
+        apiURL: `http://localhost:1337`,
+        queryLimit: 1000,
+        contentTypes: [`products`, `user`],
+        loginData: {
+          identifier: "",
+          password: "",
+        },
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-playground`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
