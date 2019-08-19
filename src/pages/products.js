@@ -1,11 +1,12 @@
 import React from "react"
+import Layout from "../components/layout"
 import ProductsPage from "../components/products/Products"
 import { graphql } from "gatsby"
 const Products = ({ data }) => {
   return (
-    <>
+    <Layout>
       <ProductsPage products={data.products.edges}></ProductsPage>
-    </>
+    </Layout>
   )
 }
 

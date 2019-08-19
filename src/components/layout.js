@@ -20,12 +20,12 @@ const Layout = ({ children }) => {
   return (
     <div id="App">
       <SideBar pageWrapId={"page-wrap"} outerContainerId={"App"} />
+      <Header siteTitle={data.site.siteMetadata.title} />
       <div id="page-wrap">
-        <Header siteTitle={data.site.siteMetadata.title} />
         <main>{children}</main>
         <footer>
           © {new Date().getFullYear()}, Built with
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+          <a href="https://www.gatsbyjs.org">Ramprit Sahani</a>
         </footer>
       </div>
     </div>

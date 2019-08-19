@@ -1,5 +1,5 @@
-import React from "react";
-import { elastic as Menu } from "react-burger-menu";
+import React from "react"
+import { elastic as Menu } from "react-burger-menu"
 
 export default props => {
   return (
@@ -8,8 +8,8 @@ export default props => {
         Home
       </a>
 
-      <a className="menu-item" href="/burgers">
-        Burgers
+      <a className="menu-item" href="/products">
+        Products
       </a>
 
       <a className="menu-item" href="/pizzas">
@@ -20,5 +20,5 @@ export default props => {
         Desserts
       </a>
     </Menu>
-  );
-};
+  )
+}

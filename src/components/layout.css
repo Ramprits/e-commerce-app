@@ -5,15 +5,11 @@ body {
 
 #App {
   font-family: sans-serif;
-
-  /* Give app full page to work with */
   height: 100vh;
 }
 
 #page-wrap {
-  text-align: center;
-
-  /* Prevent sidebar from showing a scrollbar on page */
+  margin: 2rem 10rem;
   overflow: auto;
 }
 
@@ -33,9 +29,6 @@ body {
   color: white;
 }
 
-/* The rest copied directly from react-burger-menu docs */
-
-/* Position and sizing of burger button */
 .bm-burger-button {
   position: fixed;
   width: 34px;
