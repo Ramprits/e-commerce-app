@@ -1,24 +1,25 @@
 import React from "react"
+import { Link } from "gatsby"
 import { elastic as Menu } from "react-burger-menu"
 
 export default props => {
   return (
     <Menu {...props}>
-      <a className="menu-item" href="/">
+      <Link className="menu-item" to="/">
         Home
-      </a>
+      </Link>
 
-      <a className="menu-item" href="/products">
+      <Link className="menu-item" to="/products">
         Products
-      </a>
+      </Link>
 
-      <a className="menu-item" href="/pizzas">
+      <Link className="menu-item" to="/pizzas">
         Pizzas
-      </a>
+      </Link>
 
-      <a className="menu-item" href="/desserts">
+      <Link className="menu-item" to="/desserts">
         Desserts
-      </a>
+      </Link>
     </Menu>
   )
 }
